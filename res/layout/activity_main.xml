@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button android:id="@+id/facebook_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#45619D"
+            android:text="@string/fa_facebook_square" 
+            android:textSize = "25dp"/>
+        <Button android:id="@+id/twitter_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#55ACEE"
+            android:text="@string/fa_twitter_square"
+            android:textSize = "25dp"/>    
+        <Button android:id="@+id/kakaotalk_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#FFEB00"
+            android:text="@string/fa_smile_o"
+            android:textSize = "25dp"/> 
+        <Button android:id="@+id/info_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#C00000"
+            android:text="@string/fa_smile_o"
+            android:textSize = "25dp"/>             
+    </LinearLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <WebView android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout android:id="@+id/wait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="invisible">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding = "10dp"
+                android:text="@string/wait"
+                android:textColor="#FFFFFF"
+                android:background="#000000"
+                android:gravity="center"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
